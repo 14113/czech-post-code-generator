@@ -1,5 +1,7 @@
 # Czech post CodeGenerator
 
+[![Build Status](https://travis-ci.org/14113/czech-post-code-generator.svg?branch=master)](https://travis-ci.org/14113/czech-post-code-generator)
+
 ## Installation
 
 Add this line to your application's Gemfile:
