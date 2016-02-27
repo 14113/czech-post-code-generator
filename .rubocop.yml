@@ -1,0 +1,12 @@
+AllCops:
+  DisplayStyleGuide: true
+  Include:
+    - '**/Gemfile'
+    - '**/Rakefile'
+  Exclude:
+   - 'bin/*'
+
+Metrics/LineLength:
+  Max: 180
+Documentation:
+  Enabled: false
