@@ -4,48 +4,48 @@
 
 Add this line to your application's Gemfile:
 
-    ```ruby
-    gem 'czech-post-code-generator'
-    ```
+```Ruby
+gem 'czech-post-code-generator'
+```
 
 And then execute:
 
-    ```Ruby
-    $ bundle
-    ```
+```Ruby
+$ bundle
+```
 
 Or install it yourself as:
     
-    ```Ruby
-    $ gem install czech-post-code-generator
-    ```
+```Ruby
+$ gem install czech-post-code-generator
+```
 
 ## Usage
 
-    ```Ruby
-    service_id = 'DR'
-    order_id = 202
-    client_id = 7038
-    client_type = 'C'
+```Ruby
+service_id = 'DR'
+order_id = 202
+client_id = 7038
+client_type = 'C'
 
-    serial_number = CzechPost::CodeGenerator::SerialNumber.new(service_id, order_id, client_id, client_type).run
-    ```
+serial_number = CzechPost::CodeGenerator::SerialNumber.new(service_id, order_id, client_id, client_type).run
+```
 
 ### If you have just one place for sending, you can alternative use initializer
 
-    ```Ruby
-    # config/initializers/czech_post_code_generator.rb
-    CzechPost::CodeGenerator.configure do |config|
-      config.client_id = 7039
-      config.client_type = 'D'
-    end
-    ```
+```Ruby
+# config/initializers/czech_post_code_generator.rb
+CzechPost::CodeGenerator.configure do |config|
+  config.client_id = 7039
+  config.client_type = 'D'
+end
+```
 
-    ```Ruby
-    service_id = 'DR'
-    order_id = 202
-    serial_number = CzechPost::CodeGenerator::SerialNumber.new(service_id, order_id).run
-    ```
+```Ruby
+service_id = 'DR'
+order_id = 202
+serial_number = CzechPost::CodeGenerator::SerialNumber.new(service_id, order_id).run
+```
 
 ## Documentation
 
