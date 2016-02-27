@@ -49,7 +49,7 @@ serial_number = CzechPost::CodeGenerator::SerialNumber.new(service_id, order_id)
 
 ## Documentation
 
-    For more details check [documentation](https://www.ceskaposta.cz/documents/10180/282457/apost_Smluvni-podavatel_uziv_dok_v1-11.pdf) from Czech post.
+For more details check [documentation](https://www.ceskaposta.cz/documents/10180/282457/apost_Smluvni-podavatel_uziv_dok_v1-11.pdf) from Czech post.
 
 ## Development
 
