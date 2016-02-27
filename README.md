@@ -31,6 +31,7 @@ client_id = 7038
 client_type = 'C'
 
 serial_number = CzechPost::CodeGenerator::SerialNumber.new(service_id, order_id, client_id, client_type).run
+# serial_number => 'DR7038002027C'
 ```
 
 ### If you have just one place for sending, you can alternative use initializer
